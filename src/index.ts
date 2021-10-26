@@ -1,4 +1,7 @@
 import add from './testImport';
+import * as dotenv from 'dotenv-safe';
 
-const answer = add(1, 2);
+dotenv.config();
+console.log(process.env.MY_NAME);
+const answer = add(10, 4);
 console.log(answer);
